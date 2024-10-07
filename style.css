@@ -14,19 +14,29 @@ body {
     justify-content: start;
     align-items: center;
 }
-h1 {
-    display: flex;
+.menu, .nav {
     width: 100vw;
-    height: 250px;
     position: absolute;
-    top: 150px;
     left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     text-align: center;
+}
+
+.menu {
+    height: 250px;
+    top: 150px;
     line-height: 100px;
     padding: 30px;
     background-color: rgba(217,217,217, 0.8);
-    justify-content: space-between;
-    align-items: center;
+}
+
+.nav {
+    height: 100px;
+    top: 0;
+    list-style: none;
+    background-color: #8EB897;
 }
 .hover-container {
     position: relative;
@@ -52,16 +62,12 @@ h1 img {
     height: 100px;
     width: 100px;
 }
-ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    padding: 20px;
 
-}
 a {
     text-decoration: none;
     color: black;
     padding: 10px;
+}
+.articlebg{
+    background-color: #444054;
 }
