@@ -10,7 +10,7 @@
     overflow-y: hidden;
 }
 .background {
-    background-size: 100% 95%; 
+    background-size: 100% 95%;
     background-repeat: no-repeat; 
     background-position: top; 
     display: flex;
