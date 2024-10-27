@@ -2,8 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    z-index: 0;
+    font-family: jost, system-ui, sans-serif;
 }
 article p,article li{
     color: #f5f5dc;
@@ -141,6 +140,10 @@ footer{
     background-color: #444054; 
     box-shadow: 0 4px 8px #8EB897; 
     width: 10%;
+    z-index: 10;
+}
+.dropdown:hover {
+    display: block; 
 }
 
 .dropdown li {
@@ -175,6 +178,9 @@ footer{
     max-width: 1200px;
     margin: 50px auto;
     margin-bottom: 100px;
+    border-color:#fff;
+    border-style: solid;
+    border-width: 10px;
 }
 form fieldset{
     display: flex;
@@ -230,6 +236,10 @@ input:focus, textarea:focus {
 fieldset > * {
     width: 100%;
 }
+
+.nav > span a:active {
+    text-decoration: underline;
+}
 .logof{
     width: 40%;
     height: auto;
@@ -267,19 +277,28 @@ footer {
     justify-content: center;
     align-items: center;
 }
+p{
+letter-spacing: 0.05em;
+line-height: 1.6; 
+text-indent: 20px; 
+word-spacing: 0.1em; 
+}
 
+/* This CSS rule applies a background image.
+    The ::before element is used to insert an empty content box that covers the entire body. 
+    The z-index is set to -1 to ensure that this background image stays behind all other content. */
 body.form.articlebg::before {
-    content: '';
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    width: 100%; 
-    height: 100%; 
-    background-image: url(img/background.png); 
-    background-size: cover; 
-    background-position: center; 
-    filter: blur(5px);
-    z-index: -1; 
+     content: '';
+     position: absolute; 
+     top: 0; 
+     left: 0; 
+     width: 100%; 
+     height: 100%; 
+     background-image: url(img/background.png); 
+     background-size: cover; 
+     background-position: center; 
+     filter: blur(5px);
+     z-index: -1; 
 }
 article h1{
     color: #8EB897;
@@ -291,7 +310,9 @@ article {
     align-items: center;
     padding: 20px;
 }
-
+.homepage{
+    text-transform: uppercase;
+}
 section.p1 {
     display: flex;
     flex-direction: row;
@@ -323,6 +344,35 @@ footer {
     width: 100%;
     height: 5vh;
 }
+table tr:nth-child(even) {
+    background-color: #f5f5dc;
+}
+
+table tr:nth-child(odd) {
+    background-color: #8EB897; 
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+th {
+    background-color: #444054;
+    color: #f5f5dc;
+}
+tr:hover {
+    background-color: #f1f1f1;
+}
+p::first-letter {
+    font-size: 2em; 
+    font-weight: bold; 
+}
 
 @media (max-width: 768px) {
     .menu {
@@ -331,6 +381,12 @@ footer {
         top: 100px;
         line-height: normal;
         padding: 20px;
+    }
+    table {
+        width: 100%;
+    }
+    th, td {
+        padding: 8px;
     }
 
     .menu img {
