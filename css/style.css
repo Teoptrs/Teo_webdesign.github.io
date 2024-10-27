@@ -428,18 +428,28 @@ section.p2 {
     margin-left:5%;
     margin-right:5%;
 }
-.snaket{
+.p10{
     display: flex;
     justify-content: space-around;
     align-items: center;
 
 }
-.snakea{
+.p11{
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
     margin: 3%;
+}
+.p12{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3%;
+}
+.p12 img{
+    width: 30vw;
+    height: auto;
 }
 
 
