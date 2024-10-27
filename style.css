@@ -108,9 +108,13 @@ footer{
     font-size: 1.5vw;  
     line-height: 2vw;   
     align-items: center;
+    width: 100vw;
 }
 .p1 p{
     max-width: 40vw;
+}
+p{
+    font-size: 1.5vw;
 }
 
 .parrot1 {
@@ -318,8 +322,8 @@ section.p1 {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    max-width: 800px;
-    width: 100%;
+    max-width: 2000px;
+    width: 90%;
     margin: 20px 0;
 }
 
@@ -352,9 +356,9 @@ table tr:nth-child(odd) {
     background-color: #8EB897; 
 }
 table {
-    width: 100%;
+    width: 90%;
     border-collapse: collapse;
-    margin: 20px 0;
+    margin: 5% auto;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 th, td {
@@ -372,6 +376,21 @@ tr:hover {
 p::first-letter {
     font-size: 2em; 
     font-weight: bold; 
+}
+.p2 img{
+float: inline-end;
+    height: 75%;
+    margin:10px;
+
+}
+section.p2 {
+    max-width: 2000px;
+    width: 90%;
+    margin: 20px 0;
+}
+.axo section{
+    margin-left:5%;
+    margin-right:5%;
 }
 
 @media (max-width: 768px) {
