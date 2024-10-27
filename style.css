@@ -176,6 +176,11 @@ footer{
     margin: 50px auto;
     margin-bottom: 100px;
 }
+form fieldset{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
 
 .form-section {
     flex: 1;
@@ -213,7 +218,7 @@ input:focus, textarea:focus {
     border-color: #444054;
 }
 
-button {
+.button {
     background-color: #8EB897;
     color: #fff;
     padding: 12px;
@@ -222,9 +227,21 @@ button {
     font-size: 1rem;
     cursor: pointer;
 }
-
-button:hover {
+fieldset > * {
+    width: 100%;
+}
+.logof{
+    width: 40%;
+    height: auto;
+}
+.button:hover {
     background-color: #444054;
+}
+fieldset {
+    border: none; 
+    padding: 0; 
+    margin: 0; 
+    background: transparent; 
 }
 
 .image-section {

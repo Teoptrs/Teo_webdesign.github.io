@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css"type="text/css"/>
     <link rel="icon" href="img/favicon.png" type="image/png">
     <title>Contact Us</title>
 </head>
@@ -51,23 +51,25 @@
     
     <section class="contact-container">
         <section class="form-section">
-            <h1>Contact Us</h1>
             <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-
-                <button type="submit">Send Message</button>
+                <fieldset>
+                    <legend><h1>Contact Us</h1></legend>
+            
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+            
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+            
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+            
+                    <input type="submit" value="Send Message" class="button">
+                </fieldset>
             </form>
+            
         </section>
-        <figure class="image-section">
-            <img src="img/logo2.png" alt="Contact Image" />
-        </figure>
+            <img src="img/logo2.png" alt="Contact Image" class="logof" />
     </section>
     <footer>
         &copy; 2024 Teo Peeters All rights reserved
