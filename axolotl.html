@@ -8,6 +8,15 @@
     <title>Document</title>
 </head>
 <body class="articlebg axo">
+    <aside>
+        <img src="img/up.png" alt="scroll up" title="scroll up" id="scrollup" class="scrollup">
+    </aside>
+    <script>
+        document.getElementById('scrollup').onclick = function(e) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+    </script>
     <header>
         <nav>
             <h1 class="nav">
@@ -15,9 +24,8 @@
                 <span class="hover-text">
                     <a href="axolotl.html">axolotl</a>
                     <ul class="dropdown">
-                        <li><a href="axolotl.html#food">nutrition</a></li>
-                        <li><a href="axolotl.html#habitat">habitat</a></li>
-                        <li><a href="axolotl.html#behavior">behavior</a></li>
+                        <li><a href="axolotl.html#aquarium">aquarium</a></li>
+                        <li><a href="axolotl.html#genes">genes</a></li>
                     </ul>
                 </span>
                 <span class="hover-text">
@@ -59,16 +67,17 @@
         
     
     </section>
+    <h2 id="aquarium">Aquarium Requirements for Axolotls: </h2>
     <section class="p2">
         <img src="img/axolotl2.jpg" alt="axoltl in a cave" title="axolotl in a cave">
         <p>
-            Aquarium Requirements for Axolotls: To provide a suitable environment for axolotls, a well-maintained aquarium is essential. A minimum tank size of 75 liters is recommended for one axolotl, with larger tanks needed for multiple individuals. The water temperature should be kept cool, ideally between 16-20°C, as axolotls thrive in cooler conditions. Filtration is necessary to maintain water quality, but strong currents should be avoided, as axolotls are not strong swimmers. The substrate should consist of smooth sand or a bare bottom to prevent ingestion of substrate, which can lead to health issues. It’s important to provide hiding spots, such as plants or decorations, to help axolotls feel secure. Regular water changes and monitoring of water parameters, including pH (6.5-8) and ammonia/nitrite levels, are crucial for their health.
+            To provide a suitable environment for axolotls, a well-maintained aquarium is essential. A minimum tank size of 75 liters is recommended for one axolotl, with larger tanks needed for multiple individuals. The water temperature should be kept cool, ideally between 16-20°C, as axolotls thrive in cooler conditions. Filtration is necessary to maintain water quality, but strong currents should be avoided, as axolotls are not strong swimmers. The substrate should consist of smooth sand or a bare bottom to prevent ingestion of substrate, which can lead to health issues. It’s important to provide hiding spots, such as plants or decorations, to help axolotls feel secure. Regular water changes and monitoring of water parameters, including pH (6.5-8) and ammonia/nitrite levels, are crucial for their health.
 
 Behavior of Axolotls: Axolotls are generally calm and curious creatures. They are primarily nocturnal, becoming more active during the evening and night hours. In captivity, they display a range of behaviors, such as exploring their environment, foraging for food, and interacting with their surroundings. While they can be handled, it's important to do so with care, as they have delicate skin and can easily become stressed. Their social interactions are limited; they are not particularly territorial but can exhibit aggressive behavior towards other axolotls, especially during feeding. Providing adequate space and hiding spots can help mitigate stress and potential aggression.
         </p>
     </section>
 
-    <table>
+    <table id="genes">
         <thead>
             <tr>
                 <th>Axolotl Color</th>
