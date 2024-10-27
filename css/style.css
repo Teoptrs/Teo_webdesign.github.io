@@ -38,6 +38,21 @@ article p,article li{
 .snake .p1{
     margin-left: 5%;
 }
+.menu-items {
+    display: none; 
+    flex-direction: column;
+    list-style-type: none; 
+    padding: 0;
+}
+
+.hamburger {
+    font-size: 30px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    padding: 10px;
+}
 .menu {
     height: 250px;
     top: 150px;
@@ -195,6 +210,9 @@ h2{
     border-color:#fff;
     border-style: solid;
     border-width: 10px;
+    position: relative;
+    z-index: 1;
+
 }
 form fieldset{
     display: flex;
@@ -301,13 +319,12 @@ word-spacing: 0.1em;
 /* This CSS rule applies a background image.
     The ::before element is used to insert an empty content box that covers the entire body. 
     The z-index is set to -1 to ensure that this background image stays behind all other content. */
-body.form.articlebg::before {
-     content: '';
+
+body.form::before {
      position: absolute; 
      top: 0; 
      left: 0; 
-     width: 100%; 
-     height: 100%; 
+     height: 100vw; 
      background-image: url(img/background.png); 
      background-size: cover; 
      background-position: center; 
